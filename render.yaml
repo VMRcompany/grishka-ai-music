@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: grishka-music-server
+    runtime: node
+    plan: free
+    buildCommand: npm install && cd client && npm install && npm run build && cd ..
+    startCommand: NODE_ENV=production node server/src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+databases:
+  - name: mongodb
+    databaseName: grishka-music
+    plan: free

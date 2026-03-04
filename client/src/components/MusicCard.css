@@ -1,0 +1,97 @@
+.music-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.music-card:hover {
+  background-color: #222;
+  border-color: #444;
+}
+
+.music-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.music-info {
+  flex: 1;
+}
+
+.music-title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.music-artist {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.music-uploader {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.music-card-body {
+  margin-bottom: 12px;
+}
+
+.music-description {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.music-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #777;
+}
+
+.music-genre,
+.music-duration,
+.music-plays {
+  padding: 4px 8px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+}
+
+.music-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 12px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.delete-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

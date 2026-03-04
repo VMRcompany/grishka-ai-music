@@ -1,0 +1,19 @@
+.music-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.music-list.loading,
+.music-list.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.music-list.loading p,
+.music-list.empty p {
+  font-size: 16px;
+  color: #888;
+}

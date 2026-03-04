@@ -1,0 +1,47 @@
+.favorite-button-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #888;
+}
+
+.favorite-button:hover {
+  color: #ff4444;
+  transform: scale(1.2);
+}
+
+.favorite-button.active {
+  color: #ff4444;
+}
+
+.favorite-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.favorite-count {
+  font-size: 14px;
+  color: #888;
+  min-width: 30px;
+}
+
+.favorite-button.active ~ .favorite-count {
+  color: #ff4444;
+  font-weight: bold;
+}
