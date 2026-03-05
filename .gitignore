@@ -11,6 +11,7 @@ yarn-error.log
 # Build
 dist/
 build/
+client/build/
 *.tsbuildinfo
 
 # IDE
